@@ -1,0 +1,29 @@
+﻿  main.cpp
+D:\Projects\glewTest - Copy\glewTest\main.cpp(34,30): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+D:\Projects\glewTest - Copy\glewTest\main.cpp(152,47): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(153,47): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(159,51): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(159,30): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(160,53): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(160,30): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(166,15): warning C4244: 'initializing': conversion from 'float' to 'GLint', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(172,21): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(216,38): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(216,25): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(266,23): warning C4018: '<=': signed/unsigned mismatch
+D:\Projects\glewTest - Copy\glewTest\main.cpp(315,23): warning C4018: '<=': signed/unsigned mismatch
+D:\Projects\glewTest - Copy\glewTest\main.cpp(340,27): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\glewTest - Copy\glewTest\main.cpp(349,27): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\glewTest - Copy\glewTest\main.cpp(358,27): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\glewTest - Copy\glewTest\main.cpp(367,27): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\glewTest - Copy\glewTest\main.cpp(373,27): warning C4018: '<=': signed/unsigned mismatch
+D:\Projects\glewTest - Copy\glewTest\main.cpp(481,50): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+D:\Projects\glewTest - Copy\glewTest\main.cpp(507,36): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(507,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(510,37): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(510,34): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(521,38): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(540,31): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(540,28): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Projects\glewTest - Copy\glewTest\main.cpp(560,34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  glewTest.vcxproj -> D:\Projects\glewTest - Copy\Debug\glewTest.exe
