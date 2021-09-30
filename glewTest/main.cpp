@@ -332,6 +332,7 @@ void clip()
 
     }
 
+    clipped;
     if (interFound)
     {
         // A
@@ -378,7 +379,18 @@ void clip()
                 Point2D entering = clipped.at(i % clipped.size());
                 int j = i;
                 while (clippedInterDir.at(j % clippedInterDir.size()) != 0) {
-                    clippedFinal.back().push_back(clipped.at(j % clipped.size()));
+
+                    if (j > i)
+                    {
+                        if ((clipped.at(j % clipped.size()).x != clippedFinal.back().back().x && clipped.at(j % clipped.size()).y != clippedFinal.back().back().y))
+                        {
+                            clippedFinal.back().push_back(clipped.at(j % clipped.size()));
+                        }
+                    }
+                    else
+                    {
+                        clippedFinal.back().push_back(clipped.at(j% clipped.size()));
+                    }
                     j += 1;
                 }
                 clippedFinal.back().push_back(clipped.at(j % clipped.size()));
@@ -395,6 +407,7 @@ void clip()
                 {
                     Point2D thisPoint = clipping.at(j % clipping.size());
                     GLboolean duplicate = false;
+
                     for (auto polygon : clippedFinal)
                     {
                         for (auto point : clippedFinal.back())
@@ -418,9 +431,9 @@ void clip()
                             clippedFinal.back().push_back(thisPoint);
                         }
                     }
+                    std::cout << std::endl;
                     j += 1;
                 }
-
             }
         }
     }
@@ -428,6 +441,7 @@ void clip()
     {
         clippedFinal.push_back(rotatedPoly);
     }
+
     
 }
 
@@ -456,20 +470,29 @@ void drawPolygon()
     }
 
     clip();
-    
+
     // DRAW BOUNDS DEBUG
-    //for (auto thisPoly : clippedFinal) {
-    //    glBegin(GL_LINE_STRIP);
-    //    for (GLint i = 0; i <= thisPoly.size(); i++) {
-    //        GLfloat newX = thisPoly.at(i % thisPoly.size()).x;
-    //        GLfloat newY = thisPoly.at(i % thisPoly.size()).y;
-    //        glVertex2f(newX, newY);
-    //    }
-    //    glEnd();
-    //}
+    /*for (auto thisPoly : clippedFinal) {
+        glBegin(GL_LINE_STRIP);
+        for (GLint i = 0; i <= thisPoly.size(); i++) {
+            GLfloat newX = thisPoly.at(i % thisPoly.size()).x;
+            GLfloat newY = thisPoly.at(i % thisPoly.size()).y;
+            glVertex2f(newX, newY);
+        }
+        glEnd();
+    }*/
 
     for (auto thisPoly : clippedFinal) {
         calcMidpoints(thisPoly);
+
+        // DRAW MIDPOINTS DEBUG
+        //glBegin(GL_POINTS);
+        //glColor3f(0, 0, 1);
+        //for (auto pt : midpoints)
+        //{
+        //    glVertex2f(pt.x, pt.y);
+        //}
+        //glEnd();
 
         glBegin(GL_LINE_STRIP);
         for (GLuint k = 0; k < midpoints.size(); k++)
